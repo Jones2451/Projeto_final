@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: black;
+}
+
+
+#links-profile-container {
+    margin: 5rem auto;
+    width: 384px;
+    height: 620px;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.avatar-img img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.profile-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-text h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.profile-text h4 {
+    color: #c5f82a;
+    font-size: 14px;
+    margin-top: .5rem;
+}
+
+.profile-text p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 1.5rem;
+}
+
+.profile-links-container {
+    margin-top: 1.5rem;
+}
+
+.links-menu li {
+    list-style-type: none;
+    text-align: center;
+    width: 304px;
+    height: 45px;
+    margin-top: 1rem;
+}
+
+.links-menu li a {
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+    width: 304px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all .2s ease-in;
+}
+
+.links-menu li a:hover {
+    background-color: #c5f82a;
+    color: #141414;
+}
+
+/* Área Para Celular */
+
+@media screen and (max-width: 500px) {
+    .links-menu li a {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    links-menu li {
+        width: 260px;
+    }
+
+    links-menu li a {
+        width: 90%;
+        font-size: 12px
+    }
+}
